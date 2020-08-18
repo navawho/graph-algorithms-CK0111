@@ -18,12 +18,12 @@ export const Content = styled.div`
 export const GraphDiv = styled.div`
 	background: white;
 	border-radius: 30px;
-	box-shadow: 0px 0px 20px rgba(1, 1, 1, 1);
 	padding: 12px;
 `;
 
 export const Buttons = styled.div`
 	display: flex;
+	flex-direction: column;
 	margin-bottom: 32px;
 
 	button {
@@ -42,5 +42,17 @@ export const Buttons = styled.div`
 		&:hover {
 			background: ${shade(0.2, '#FFF')};
 		}
+	}
+`;
+
+export const InputWrapper = styled.div`
+	display: flex;
+
+	margin-top: 12px;
+
+	input {
+		padding: 12px;
+		border-radius: 2px;
+		border: 0;
 	}
 `;
